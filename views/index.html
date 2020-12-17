@@ -1,13 +1,21 @@
-{{define "index"}}
-<!DOCTYPE html>
-<html>
-    <head>
-        {{template "_header"}}
-    </head>
-    <body>
-        {{template "_message"}}
-        <p>Page: Index</p>
-        <p>Welcome {{.name}}</p>
-    </body>
+<head>
+    <title>Learning html/template Actions</title>
+</head>
+<body>
+<table>
+    <tr>Learning Template Golang</tr>
+</table>
+<tr>
+    <td>{{Name}} </td>
+    <td> {{.Name}}</td>
+<tr>
+
+<td>
+    <td>Gender</td>
+    {{$gender := .Gender}}
+    <td style="text-transform: capitalize;">
+        {$gender}
+    </td>
+</tr>
+</body>
 </html>
-{{end}}
